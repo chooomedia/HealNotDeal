@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Heal no Deal – Kampagne für MedCannG Fairness</title>
+    <meta
+      name="description"
+      content="Heal no Deal: In 15 Sekunden für Demokratie – unterzeichne die Petition gegen Verschärfungen am MedCannG. Unterstützt von Cannachris."
+    />
+    <!-- UI-Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="inner">
+        <div class="brand">Heal no Deal</div>
+        <div class="spacer"></div>
+
+        <div class="menu">
+          <!-- Chips: voll gerundet, zentriert -->
+          <div class="chips">
+            <span class="chip">15&nbsp;Sekunden&nbsp;für&nbsp;Demokratie</span>
+            <span class="chip">Heilen&nbsp;statt&nbsp;Hindern</span>
+            <span class="chip">Petition&nbsp;jetzt&nbsp;teilen</span>
+          </div>
+
+          <!-- Theme Switch -->
+          <label class="switch-wrap" for="themeToggle" title="Theme umschalten">
+            <span>Theme</span>
+            <div class="switch">
+              <input id="themeToggle" type="checkbox" />
+              <div class="track"></div>
+              <div class="thumb"></div>
+            </div>
+          </label>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero: ohne Card, mittig, mehr Spacing -->
+      <section class="hero">
+        <h1
+          >Heal no Deal: 3 Klicks, 15&nbsp;Sekunden – unterschreib’ fürs
+          MedCannG ohne Rückschritt</h1
+        >
+        <p>
+          Mit Cannachris’ Aufruf setzt du ein klares Zeichen: Patient*innen
+          brauchen Schutz und echten Zugang – nicht neue Hürden. Unterzeichne
+          jetzt die Petition gegen die geplanten Verschärfungen.
+          <strong>Heilen, nicht verhindern.</strong>
+          Jede Stimme zählt – teile die Aktion in deinen Netzwerken und hol
+          Freund*innen in 15&nbsp;Sekunden an Bord.
+        </p>
+
+        <!-- Social: immer grün -->
+        <div class="social">
+          <a
+            class="btn btn-primary"
+            href="https://twitter.com/intent/tweet?text=Ich+unterst%C3%BCtze+%23HealNoDeal%3A+Petition+gegen+die+Versch%C3%A4rfung+des+MedCannG.+Jetzt+mitzeichnen!&url=https%3A%2F%2Fcannachris.de"
+            target="_blank"
+            rel="noopener"
+            >X / Twitter</a
+          >
+          <a
+            class="btn btn-primary"
+            href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcannachris.de"
+            target="_blank"
+            rel="noopener"
+            >Facebook</a
+          >
+          <a
+            class="btn btn-primary"
+            href="https://api.whatsapp.com/send?text=Heal%20no%20Deal%3A%20In%2015%20Sekunden%20unterschreiben%20%E2%80%93%20Petition%20gegen%20die%20Versch%C3%A4rfung%20des%20MedCannG.%20https%3A%2F%2Fcannachris.de"
+            target="_blank"
+            rel="noopener"
+            >WhatsApp</a
+          >
+          <a
+            class="btn btn-primary"
+            href="mailto:?subject=Heal%20no%20Deal%20–%20Petition&body=In%2015%20Sekunden%20unterzeichnen%3A%20Heal%20no%20Deal%20gegen%20Versch%C3%A4rfungen%20am%20MedCannG.%20https%3A%2F%2Fcannachris.de"
+            >E-Mail</a
+          >
+        </div>
+      </section>
+
+      <div class="grid">
+        <!-- Controls -->
+        <section class="card">
+          <div class="controls">
+            <div class="col">
+              <label for="displayFont"
+                >Display-Schrift (für Heal/Deal & „not“ initial)</label
+              >
+              <select id="displayFont">
+                <option value="Berkshire Swash|Berkshire+Swash" selected
+                  >Berkshire Swash (elegant + chunky)</option
+                >
+                <option value="Abril Fatface|Abril+Fatface"
+                  >Abril Fatface (Display Serif)</option
+                >
+                <option value="Shrikhand|Shrikhand"
+                  >Shrikhand (retro, fett)</option
+                >
+                <option value="Oleo Script|Oleo+Script"
+                  >Oleo Script (chunky Script)</option
+                >
+                <option value="Lobster Two|Lobster+Two:wght@700"
+                  >Lobster Two Bold (retro)</option
+                >
+              </select>
+
+              <div class="switch field">
+                <input id="montNot" type="checkbox" />
+                <label for="montNot"
+                  >„not“ in Montserrat (500) statt Display-Schrift</label
+                >
+              </div>
+
+              <label class="mt">Größen</label>
+              <div class="range-row"
+                ><input
+                  id="sizeHeal"
+                  type="range"
+                  min="520"
+                  max="620"
+                  step="2"
+                  value="520"
+                /><span id="sizeHealVal">520</span></div
+              >
+              <div class="range-row"
+                ><input
+                  id="sizeNot"
+                  type="range"
+                  min="90"
+                  max="320"
+                  step="2"
+                  value="190"
+                /><span id="sizeNotVal">190</span></div
+              >
+              <div class="range-row"
+                ><input
+                  id="sizeDeal"
+                  type="range"
+                  min="520"
+                  max="620"
+                  step="2"
+                  value="520"
+                /><span id="sizeDealVal">520</span></div
+              >
+            </div>
+
+            <div class="col">
+              <label for="patternVariant">Pattern-Variante (SVG, scharf)</label>
+              <select id="patternVariant">
+                <option value="tile-rosette" selected
+                  >Rosette (7-Leaf, nahtlos)</option
+                >
+                <option value="tile-mono">Mono-Leaf Grid (clean)</option>
+                <option value="tile-outline">Outline-Leaf (konturiert)</option>
+              </select>
+
+              <div class="range-row"
+                ><input
+                  id="tile"
+                  type="range"
+                  min="40"
+                  max="200"
+                  step="2"
+                  value="72"
+                /><span id="tileVal">72</span></div
+              >
+              <div class="range-row"
+                ><input
+                  id="opacity"
+                  type="range"
+                  min="0.15"
+                  max="0.85"
+                  step="0.01"
+                  value="0.38"
+                /><span id="opacityVal">0.38</span></div
+              >
+
+              <label>Stroke (Kontur)</label>
+              <div class="range-row"
+                ><input
+                  id="stroke"
+                  type="range"
+                  min="0"
+                  max="18"
+                  step="1"
+                  value="10"
+                /><span id="strokeVal">10</span></div
+              >
+
+              <label>Leading (Stack-Abstand)</label>
+              <div class="range-row"
+                ><input
+                  id="lead"
+                  type="range"
+                  min="8"
+                  max="80"
+                  step="2"
+                  value="20"
+                /><span id="leadVal">20</span></div
+              >
+
+              <label>Not Offset (Feinjustage)</label>
+              <div class="range-row"
+                ><input
+                  id="notBias"
+                  type="range"
+                  min="-40"
+                  max="40"
+                  step="1"
+                  value="-20"
+                /><span id="notBiasVal">-20</span></div
+              >
+            </div>
+          </div>
+
+          <div class="btns">
+            <a id="renderWhite" class="btn btn-primary" href="#"
+              >SVG rendern (weiß)</a
+            >
+            <a id="renderBlack" class="btn btn-primary" href="#"
+              >SVG rendern (schwarz)</a
+            >
+          </div>
+        </section>
+
+        <!-- Preview -->
+        <section class="card preview">
+          <div class="preview-toolbar">
+            <div>Live-Preview (1:1 zum Export)</div>
+            <div class="switch right">
+              <input id="bgDark" type="checkbox" />
+              <label for="bgDark">Dunkler Hintergrund</label>
+            </div>
+          </div>
+
+          <div class="stage">
+            <div class="stage-inner">
+              <object id="previewObj" type="image/svg+xml" data=""></object>
+            </div>
+          </div>
+
+          <!-- 5s Loading -->
+          <div class="overlay" id="overlay" style="display: none">
+            <div class="spinner"></div>
+            <div class="progress"><div class="bar"></div></div>
+            <div class="overlay-copy">Erstelle SVG … (mind. 5 s)</div>
+          </div>
+
+          <div class="hint"
+            >„not“ bleibt zentriert (−20 px), Heal↔Deal Basis +50 px,
+            <strong>Deal stets +30 px</strong> extra. Pattern: scharf &
+            nahtlos.</div
+          >
+        </section>
+      </div>
+
+      <section class="card downloads">
+        <strong>Gerenderte SVGs</strong>
+        <div class="download" id="downloads"></div>
+        <div class="download-hint"
+          >Tipp: Export entspricht exakt der Preview (1:1).</div
+        >
+        <pre class="code" id="svgOut"></pre>
+      </section>
+    </main>
+
+    <footer>
+      <div class="inner foot">
+        <div>© Cannachris <span id="year"></span></div>
+        <nav class="foot-nav">
+          <a
+            href="https://cannachris.de/impressum/"
+            aria-label="Impressum"
+            target="_blank"
+            rel="noopener"
+            >Impressum</a
+          >
+          <a
+            href="https://cannachris.de/datenschutz/"
+            aria-label="Datenschutz"
+            target="_blank"
+            rel="noopener"
+            >Datenschutz</a
+          >
+          <a
+            href="https://cannachris.de/kontakt/"
+            aria-label="Kontakt"
+            target="_blank"
+            rel="noopener"
+            >Kontakt</a
+          >
+        </nav>
+      </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
