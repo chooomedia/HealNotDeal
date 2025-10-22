@@ -358,7 +358,7 @@ body.dark .preview-toolbar {
 
 .stage-inner {
     border-radius: 14px;
-    min-height: 640px;
+    min-height: 440px;
     display: grid;
     place-items: center;
     overflow: hidden;
@@ -376,7 +376,7 @@ body.dark .stage-inner {
 .stage-inner object {
     width: 100%;
     height: 100%;
-    min-height: 600px;
+    min-height: 500px;
     border: 0;
     border-radius: 12px
 }
